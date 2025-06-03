@@ -5,12 +5,13 @@
   margin-top: 32px;
   border: 1px solid;
   border-radius: 8px;
+  
 }
 .back-link::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 25%;
+  left: -50%;
   width: 16px;
   height: 16px;
 
