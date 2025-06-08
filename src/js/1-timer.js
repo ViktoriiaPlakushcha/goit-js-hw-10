@@ -22,9 +22,12 @@ const options = {
       console.log(selectedDates[0]);
       if (selectedDates[0].getTime() < Date.now()) {
         startBtn.disabled = true;
-        return iziToast.show({
+        return iziToast.error({
+          
           message: 'Please choose a date in the future',
           class: 'alert',
+          icon: 'ico-error',
+          iconColor: 'white',
           position: 'topRight',
           backgroundColor: 'red',
           messageColor: 'white',

@@ -22,7 +22,7 @@ function handleSubmit(event) {
         iziToast.show({
             message: value,
             position: 'topRight',
-            backgroundColor: 'limegreen',
+            backgroundColor: '#59a10d',
             messageColor: 'white',
             close: false,
         });
@@ -31,7 +31,7 @@ function handleSubmit(event) {
             iziToast.show({
                 message: error,
                 position: 'topRight',
-                backgroundColor: 'red',
+                backgroundColor: '#ef4040',
                 messageColor: 'white',
                 close: false,
             });
