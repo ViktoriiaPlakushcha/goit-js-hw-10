@@ -53,8 +53,7 @@ function handleClick() {
   intervalId = setInterval(() => {
     const currentTime = Date.now();
     const deltaTime = userSelectedDate - currentTime;
-    const time = convertMs(deltaTime);
-    updateTime(time);
+    
     if (deltaTime <= 0) {
       clearInterval(intervalId);
       isActive = false;
@@ -63,6 +62,10 @@ function handleClick() {
       updateTime({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       return;
     }
+
+    const time = convertMs(deltaTime);
+    updateTime(time);
+    
   },
     1000);
 };
